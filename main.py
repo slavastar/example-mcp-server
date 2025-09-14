@@ -22,14 +22,3 @@ def welcome(
     name: str = Field(description="Name of the user")
 ) -> str:
     return f"Welcome {name} to this amazing MCP server!"
-
-
-@mcp.tool
-def add_squares(a: int, b: int) -> int:
-    """Return sum of squares of two numbers"""
-    return a**2 + b**2
-
-
-if __name__ == "__main__":
-    mcp.run()
-    
