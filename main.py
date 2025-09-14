@@ -22,3 +22,7 @@ def welcome(
     name: str = Field(description="Name of the user")
 ) -> str:
     return f"Welcome {name} to this amazing MCP server!"
+
+
+if __name__ == "__main__":
+    mcp.run(transport="streamable-http")
